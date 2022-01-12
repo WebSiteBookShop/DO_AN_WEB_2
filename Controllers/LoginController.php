@@ -16,7 +16,7 @@ class LoginController
         for ($i = 1; $i <= count($data_danhmuc); $i++) {
             $data_chitietDM[$i] = $this->login_model->chitietdanhmuc($i);
         }
-
+        $data1 = $this->login_model->thanhpho();
         require_once('Views/index.php');
     }
     function login_action()
@@ -53,6 +53,7 @@ class LoginController
             'GioiTinh' => "",
             'SDT' => $_POST['SĐT'],
             'Email' =>    $_POST['Email'],
+            'mapx' => $_POST['phuongxa'],
             'DiaChi'  =>   "",
             'TaiKhoan' => $_POST['TaiKhoan'],
             'MatKhau' => md5($_POST['MatKhau']),

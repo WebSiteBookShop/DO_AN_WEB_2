@@ -63,6 +63,28 @@
 							<input type="text" name="SĐT" placeholder="Số điện thoại.." required pattern="[0-9]+" minlength="10" />
 							<input type="password" name="MatKhau" placeholder="Mật khẩu" minlength="6" required />
 							<input type="password" name="check_password" placeholder="Xác nhận mật khẩu" minlength="6" required />
+							<div class="custom-select">
+								<select class="form-control" name="thanhpho" title="Tỉnh thành" id="tinhthanh">
+								<option>--Chọn Thành Phố--</option>
+									<?php
+									foreach ($data1 as $key => $tt) {
+									?>
+										<option value="<?php echo $tt['matp']; ?>"><?php echo $tt['name_tinhthanh'] ?></option>
+									<?php
+									}
+									?>
+								</select>
+							</div>
+							<div class="custom-select">
+								<select class="form-control" name="quanhuyen" title="Quận huyện" id="quanhuyen">
+									<option >--Chưa chọn tỉnh thành--</option>
+								</select>
+							</div>
+							<div class="custom-select">
+								<select class="form-control" name="phuongxa" title="Phường xã"  id="phuongxa">
+									<option value="">--Chưa chọn quận huyện--</option>
+								</select>
+							</div>
 							<div class="submit-text coupon">
 								<button type="submit" form="form2">Đăng ký</button>
 							</div>
@@ -74,3 +96,36 @@
 	</div>
 </section>
 <!-- login content section end -->
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("#tinhthanh").change(function(){
+				var tinhthanh_id = $("#tinhthanh").val();
+				$.ajax({
+					url: "Controllers/quanhuyen.php",
+					method : "POST",
+					data : {tinhthanh_id : tinhthanh_id},
+					
+					success :function(data){
+						$("#quanhuyen").html(data);
+					}
+				})
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#quanhuyen").change(function(){
+				var quanhuyen_id = $("#quanhuyen").val();
+				$.ajax({
+					url: "Controllers/phuongxa.php",
+					method : "POST",
+					data : {quanhuyen_id : quanhuyen_id},
+					
+					success :function(data){
+						$("#phuongxa").html(data);
+					}
+				})
+			})
+		})
+	</script>

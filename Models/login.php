@@ -93,6 +93,7 @@ class Login extends Model
         and xp.maqh = qh.maqh
         and qh.matp = tt.matp
         and nd.MaND = $id";
+
         
         return $this->conn->query($query)->fetch_assoc();
         
