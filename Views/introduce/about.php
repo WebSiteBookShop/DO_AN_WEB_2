@@ -31,16 +31,19 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="about-text">
 						<div class="about-author">
-							<h4>CỬA HÀNG NỘI THẤT DHL</h4>
+							<h4>CỬA HÀNG SÁCH HNM</h4>
 						</div>
 						<h5>Cửa hàng chúng tôi với:</h5>
 						<ol>
-							<li>Chế độ trả góp ưu đãi</li>
-							<li>Thái độ phục vụ tốt</li>
-							<li>Nguồn cung cấp uy tín và ổn định</li>
+							<li>Chế độ phục vụ tốt</li>
+							<li>Đội ngũ nhân viên phục vụ tốt</li>
+							<li>Cung cấp các loại sách chính hãng và chất lượng</li>
 							<li>Chế độ bảo hành hợp lý</li>
 						</ol>
-						<p>Với những chế độ đó chúng tôi hứa sẽ mang lại cho khách một sự hài lòng nhất khi đến với cửa hàng của chúng tôi</p>
+						<p>
+							Với những chế độ mà cửa hàng của chúng tôi mang lại sẽ tạo cho khách hàng một sự hài lòng nhất 
+							định khi đến với cửa hàng của chúng tôi
+						</p>
 					</div>
 				</div>
 			</div>
@@ -48,77 +51,5 @@
 	</div>
 </div>
 <!-- about-us section end -->
-<!-- team-member section start -->
-<section class="pages team-member section-padding-bottom">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="section-title text-center">
-					<h3>Đội ngũ hỗ trợ</h3>
-				</div>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-sm-12 col-md-4">
-				<div class="single-member">
-					<div class="member-img">
-						<a href="#"><img src="public/img/about/anh1.jpg" alt="Team Member" /></a>
-					</div>
-					<div class="share-member">
-						<div class="member-title">
-							<h4>Dương Thị Thùy Dung</h4>
-						</div>
-						<div class="member-btn">	
-							<a href="#"><i class="mdi mdi-facebook"></i></a>
-							<a href="#"><i class="mdi mdi-twitter"></i></a>
-							<a href="#"><i class="mdi mdi-google-plus"></i></a>
-							<a href="#"><i class="mdi mdi-dribbble"></i></a>
-							<a href="#"><i class="mdi mdi-rss"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- single member end -->
-			<div class="col-sm-12 col-md-4">
-				<div class="single-member">
-					<div class="member-img">
-						<a href="#"><img src="public/img/about/anh2.jpg" alt="Team Member" /></a>
-					</div>
-					<div class="share-member">
-						<div class="member-title">
-							<h4>Trần Hữu Lương</h4>
-						</div>
-						<div class="member-btn">	
-							<a href="#"><i class="mdi mdi-facebook"></i></a>
-							<a href="#"><i class="mdi mdi-twitter"></i></a>
-							<a href="#"><i class="mdi mdi-google-plus"></i></a>
-							<a href="#"><i class="mdi mdi-dribbble"></i></a>
-							<a href="#"><i class="mdi mdi-rss"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- single member end -->
-			<div class="col-sm-12 col-md-4">
-				<div class="single-member">
-					<div class="member-img">
-						<a href="#"><img src="public/img/about/anh3.jpg" alt="Team Member" /></a>
-					</div>
-					<div class="share-member">
-						<div class="member-title">
-							<h4>Bùi Nguyễn Ngọc Huy</h4>
-						</div>
-						<div class="member-btn">	
-							<a href="#"><i class="mdi mdi-facebook"></i></a>
-							<a href="#"><i class="mdi mdi-twitter"></i></a>
-							<a href="#"><i class="mdi mdi-google-plus"></i></a>
-							<a href="#"><i class="mdi mdi-dribbble"></i></a>
-							<a href="#"><i class="mdi mdi-rss"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- team-member section end -->
+
+
