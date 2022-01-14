@@ -57,7 +57,7 @@
 							<tfoot>
 								<tr>
 									<th>Tổng tiền</th>
-									<td><?= number_format($count + 15000) ?> VNĐ</td>
+									<td><?php echo number_format($count + 15000) ?> VNĐ</td>
 								</tr>
 							</tfoot>
 						</table>
@@ -90,3 +90,4 @@
 	</div>
 </section>
 <!-- order-complete content section end -->
+

@@ -102,6 +102,7 @@
 									<th>Tổng</th>
 									<td id="thanhtien"><?php $tong = $count -$giamgia?> VNĐ</td>
 								</tr>
+							
 							</tfoot>
 						</table>
 					</div>

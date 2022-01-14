@@ -8,37 +8,42 @@
 
      
       ?>
-
-
-                            <tfoot id="nhangiatri" >
-								<tr>
-									<th id="vanchuyentong" style="color: gray;">Vận Chuyển</th>
-									<td id="vanchuyen"  style="padding-left:80%; color: gray;" >
-                                    <?php  if($id1 == 20227) {
-                                    $tien = 12000;
-                                    echo number_format($tien).'VNĐ';
+                     <?php  if($id3 == 20227) {
+                                    $tien = 12000;    
                                 }else{
                                     if( $id2 == 492){
                                         $tien = 15000;
-                                        echo number_format($tien).'VNĐ';
+                                     
                                     }else{
-                                        if($id3 == 48){
+                                        if($id1 == 48){
                                             $tien = 19000;
-                                            echo number_format($tien).'VNĐ';
+                                            
                                         }else{
-                                            $tien = 24000;
-                                            echo number_format($tien).'VNĐ';
+                                            $tien = 30000;
                                         }
                                     }
                                 } 
                                 ?>
+                            <tfoot id="nhangiatri" >
+								<tr>
+									<th id="vanchuyentong" style="color: gray;">Vận Chuyển</th>
+									<td id="vanchuyen"  style="padding-left:80%; color: gray;" >
+                                        <?= number_format($tien).'VNĐ';?>
 									</td>
 								</tr>
 								<tr>
 									<th>Tổng</th>
-									<td id="thanhtien"><?php echo number_format($tien + $tong)?> VNĐ</td>
+									<td id="thanhtien"><?php $Thanhtoan= $tien + $tong; echo number_format($Thanhtoan) ?> VNĐ</td>
 								</tr>
 							</tfoot>
+
+                            <?php
+								 if (isset($_SESSION['sanpham'])) {
+                                    $arr = $_SESSION['sanpham'];
+                                    $arr['ThanhTien'] = $Thanhtoan;
+                                    $_SESSION['sanpham'] = $arr;
+                                } 
+								?>
             <?php
             
 ?>

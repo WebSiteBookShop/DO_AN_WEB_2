@@ -35,17 +35,19 @@ class CheckoutController
             header('location: ?act=taikhoan');
         }
     }
-    function  save()
+    function save()
     {
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ThoiGian =  date('Y-m-d H:i:s');
 
         $count = 0;
+        $tinh = 0;
         if (isset($_SESSION['sanpham'])) {
             foreach ($_SESSION['sanpham'] as $value) {
                 $count += $value['ThanhTien'];
             }
         }
+
 
         $data = array(
             'MaND' => $_SESSION['login']['MaND'],
