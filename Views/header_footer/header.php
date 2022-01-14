@@ -16,14 +16,15 @@
                                     <?php  if(isset($_SESSION['login'])){ ?>
                                     <li><b>Chào <?=$_SESSION['login']['Ho']?> <?=$_SESSION['login']['Ten']?></b></li>
                                     <li><a href="?act=taikhoan&xuli=account">Tài khoản</a></li>
-                                    <li><a href="?act=taikhoan&xuli=dangxuat">Đăng xuất</a></li>
+                                    
                                     <?php
                                         if(isset($_SESSION['isLogin_Admin']) || isset($_SESSION['isLogin_Nhanvien'])){ ?>
-                                        <li><a href="admin/?mod=login">Trang quản lý</a></li>
+                                        <li><a href="admin/?mod=login">Quản lý</a></li>
                                   <?php }}else{ ?>
                                     
                                     <li><a href="?act=taikhoan">Đăng nhập</a></li>
                                     <?php } ?>
+                                    <li><a href="?act=taikhoan&xuli=dangxuat">Đăng xuất</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -42,7 +43,7 @@
         <div class="row">
             <div class="col-sm-2">
                 <div class="logo">
-                    <a href="?act=home"><img src="public/img/logo12.png" alt="Sellshop" /></a>
+                    <a href="?act=home"><img src="public/img/logo15.jpg" alt="Sellshop" /></a>
                 </div>
             </div>
             <div  class="col-sm-8">

@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="pages-title-text text-center">
-					<h2>Order Complete</h2>
+					<h2>Đặt hàng thành công</h2>
 					<ul class="text-left">
 						<li><a href="index.php?act=home">Trang chủ</a></li>
 						<li><span> // </span>HOÀN THÀNH ĐƠN HÀNG</li>
