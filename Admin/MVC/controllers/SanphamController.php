@@ -46,10 +46,10 @@ class SanphamController
         if ($status_upload) { // nếu upload file không có lỗi 
             $HinhAnh1 =  "img/products/" . basename($_FILES["anh1"]["name"]);
         }
-            $this->sanpham_model->store_anh($masp, $HinhAnh1);
+                $this->sanpham_model->store_anh($masp, $HinhAnh1);
          }
 
-         if($_FILES["anh1"]["name"]!= ""){
+         if($_FILES["anh2"]["name"]!= ""){
         $HinhAnh2 = "";
         $target_file = $target_dir . basename($_FILES["anh2"]["name"]); // link sẽ upload file lên
 
@@ -61,7 +61,7 @@ class SanphamController
         $this->sanpham_model->store_anh($masp, $HinhAnh2);
     }
 
-        if($_FILES["anh1"]["name"]!= ""){
+        if($_FILES["anh3"]["name"]!= ""){
         $HinhAnh3 = "";
         $target_file = $target_dir . basename($_FILES["anh3"]["name"]); // link sẽ upload file lên
 
@@ -73,7 +73,7 @@ class SanphamController
         $this->sanpham_model->store_anh($masp, $HinhAnh3);
     }
 
-        if($_FILES["anh1"]["name"]!= ""){
+        if($_FILES["anh4"]["name"]!= ""){
         $HinhAnh4 = "";
         $target_file = $target_dir . basename($_FILES["anh4"]["name"]); // link sẽ upload file lên
 
@@ -85,7 +85,7 @@ class SanphamController
         $this->sanpham_model->store_anh($masp, $HinhAnh4);
     }
 
-        if($_FILES["anh1"]["name"]!= ""){
+        if($_FILES["anh7"]["name"]!= ""){
         $HinhAnh7 = "";
         $target_file = $target_dir . basename($_FILES["anh7"]["name"]); // link sẽ upload file lên
 
@@ -97,7 +97,7 @@ class SanphamController
         $this->sanpham_model->store_anh($masp, $HinhAnh7);
     }
 
-        if($_FILES["anh1"]["name"]!= ""){
+        if($_FILES["anh8"]["name"]!= ""){
         $HinhAnh8 = "";
         $target_file = $target_dir . basename($_FILES["anh8"]["name"]); // link sẽ upload file lên
 
@@ -109,7 +109,7 @@ class SanphamController
         $this->sanpham_model->store_anh($masp, $HinhAnh8);
     }
 
-        if($_FILES["anh1"]["name"]!= ""){
+        if($_FILES["anh9"]["name"]!= ""){
         $HinhAnh9 = "";
         $target_file = $target_dir . basename($_FILES["anh9"]["name"]); // link sẽ upload file lên
 

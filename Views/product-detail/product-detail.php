@@ -121,7 +121,7 @@
                            
                                 <li class="active"><a data-toggle="tab" href="#moreinfo">Đặc điểm</a></li>
                            
-                            <li><a data-toggle="tab" href="#reviews">Đánh giá</a></li>
+                            <li><a data-toggle="tab" href="#reviews">Bình luận</a></li>
                         </ul>
                         <div class="tab-content">
                            
@@ -176,32 +176,7 @@
                                     <!-- /comments -->
                                 </div>
                                 <hr />
-                                <div class="your-rating log-title">
-                                    <h3>Góp ý :</h3>
-                                </div>
-                                <div class="custom-input">
-                                    <form action="" method="post">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="input-mail">
-                                                    <span>Subject</span>
-                                                    <input  type="text" name="subject">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12">
-                                                <div class="custom-mess">
-                                                <textarea  name="contents" placeholder="Contents"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12">
-                                                <div class="submit-text">
-                                                <input   type="submit" name="submit">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

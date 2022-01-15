@@ -1,5 +1,5 @@
 
-!-- pages-title-start -->
+<!-- pages-title-start -->
 <div class="pages-title section-padding">
 	<div class="container">
 		<div class="row">
@@ -86,7 +86,11 @@
 								} ?>
 						<tr>
 							<th>Giảm Giá</th>
-							<td><?php  $giamgia =($dataSP[0]['GiaTriKM']* $soluong); echo number_format($giamgia)?></td>
+							<td><?php if($dataSP != null) 
+							{ $giamgia =($dataSP[0]['GiaTriKM']* $soluong);}
+							else{ $giamgia = 0; }
+							
+							echo number_format($giamgia)?></td>
 						</tr>
 						<tr>
 							<th>Vat</th>

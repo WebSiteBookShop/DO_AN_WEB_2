@@ -72,8 +72,8 @@ class model
         return $data;
     }
     function sanpham_banchay(){
-        $query = "SELECT * ,sum(ct.SoLuong) as sl
-        from sanpham as sp, loaisanpham as lsp, danhmuc as dm, chitiethoadon as ct
+        $query = "SELECT * ,sum(ct.SoLuong) as sl 
+        from sanpham as sp, loaisanpham as lsp, danhmuc as dm, chitiethoadon as ct 
         WHERE TrangThai = 1 
         and sp.MaLSP = lsp.MaLSP
         and lsp.MaDM = dm.MaDM 
@@ -95,13 +95,17 @@ class model
     }
     function sanpham($masp)
     {
+        
+        if($masp != null){
         $query = "SELECT * from sanpham, khuyenmai 
 				where sanpham.MaSP = $masp
 				and sanpham.MaKM = khuyenmai.MaKM" ;
 
         require("result.php");
-
         return $data;
+        }
+        return null;
+       
     }
 }
 
