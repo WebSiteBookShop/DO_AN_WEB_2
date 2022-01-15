@@ -59,6 +59,8 @@
 									</tr>
 							<?php }
 								$soluong = $value['SoLuong'];
+							
+								
 							} ?>
 						</tbody>
 					</table>
@@ -72,7 +74,7 @@
 			$username ="root";
 			$password =""; 
 			$db_name ="shopbansach";
-
+				if(isset($masp)){
 			//Tao ket noi CSDL
 			$conn = new mysqli($severname,$username,$password,$db_name);
 			$conn->set_charset("utf8");
@@ -85,6 +87,7 @@
 				while ($row = $result->fetch_assoc()) {
 					$data_sp[] = $row;
 				}
+			}
 
 		?>
 		<div class="row margin-top">
@@ -103,7 +106,12 @@
 									</tr>
 									<tr>
 										<th>Giảm giá</th>
-										<td><?php $giamgia =($data_sp[0]['GiaTriKM']* $soluong); echo number_format($giamgia) ?>VNĐ</td>
+										<td><?php if (isset($masp))
+										{$giamgia =($data_sp[0]['GiaTriKM']* $soluong);}
+										else{
+											$giamgia = 0;
+										}
+										 echo number_format($giamgia) ?>VNĐ</td>
 									</tr>
 									<tr>
 										<th>Vận Chuyển</th>

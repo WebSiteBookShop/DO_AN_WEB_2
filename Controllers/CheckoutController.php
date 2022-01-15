@@ -47,8 +47,6 @@ class CheckoutController
                 $count += $value['ThanhTien'];
             }
         }
-
-
         $data = array(
             'MaND' => $_SESSION['login']['MaND'],
             'NgayLap' => $ThoiGian,
@@ -58,6 +56,7 @@ class CheckoutController
             'TongTien' => $count,
             'TrangThai'  =>  '0',
         );
+       
         $this->checkout_model->save($data);
     }
     function order_complete()
@@ -74,6 +73,8 @@ class CheckoutController
             foreach ($_SESSION['sanpham'] as $value) {
                 $count += $value['ThanhTien'];
             }
+            unset($_SESSION['sanpham']);
+            
         }
         require_once('Views/index.php');
     }
