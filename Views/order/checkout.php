@@ -1,4 +1,5 @@
-<!-- pages-title-start -->
+
+!-- pages-title-start -->
 <div class="pages-title section-padding">
 	<div class="container">
 		<div class="row">
@@ -51,7 +52,7 @@
 										<option>--Chưa chọn Quận Huyện--</option>
 									</select>
 								</div>
-							<input type="text" name="DiaChi" placeholder="Đại chỉ giao hàng" required  value="<?=$_SESSION['login']['DiaChi']?>"/>
+							<input type="text" name="DiaChi" placeholder="Địa chỉ giao hàng" required  value="<?=$_SESSION['login']['DiaChi']?>"/>
 							</br>
 							<div class="submit-text">
 								<button type="submit">Thanh toán</button>

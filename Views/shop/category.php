@@ -25,19 +25,7 @@
             </ul>
         </div>
     </div>
-    <div class="s-side-text">
-        <div class="sidebar-title">
-            <h4>Giá</h4>
-        </div>
-        <div class="range-slider clearfix">
-            <form action="index.php?act=shop" method="post">
-                <label><span>Giá: </span> <input type="text" id="amount" readonly  /></label>
-                <input type="hidden" id="amount2" name="shop" />
-                <div id="slider-range"></div></br>
-                <button type="submit">Tìm kiếm</button>
-            </form>
-        </div>
-    </div>
+
     
     
 </div>

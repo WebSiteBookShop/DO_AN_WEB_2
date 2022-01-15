@@ -95,6 +95,7 @@ class LoginController
                 'Ho' =>    $_POST['Ho'],
                 'Ten'  =>   $_POST['Ten'],
                 'GioiTinh' => $_POST['GioiTinh'],
+                'mapx' => $_POST['phuongxa'],
                 'SDT' => $_POST['SĐT'],
                 'Email' =>    $_POST['Email'],
                 'DiaChi'  =>   $_POST['DiaChi'],

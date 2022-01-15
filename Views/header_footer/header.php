@@ -51,8 +51,8 @@
                     <div  class="mainmenu">
                         <nav>
                             <ul>
-                                <li><a href="?act=home">Trang chủ</a></li>
-                                <li><a href="?act=shop">Danh mục</a>
+                                <li><a href="?act=home" style="font-size: 17px; font-weight: bold; ">Trang chủ</a></li>
+                                <li><a href="?act=shop" style="font-size: 17px; font-weight: bold;">Danh mục</a>
                                     <ul class="magamenu" style="width: 1200px; padding: 10px 10px; margin-left: -300px;" >
                                         <li class="banner"></li>
                                         <?php $i = 1; foreach ($data_chitietDM as $row) { ?>
@@ -69,10 +69,10 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="?act=checkout">Thanh Toán</a>
+                                    <a href="?act=checkout" style="font-size: 17px; font-weight: bold; ">Thanh Toán</a>
                                 </li>
-                                <li><a href="?act=about">Giới thiệu</a></li>
-                                <li><a href="?act=contact">Liên hệ</a></li>
+                                <li><a href="?act=about" style="font-size: 17px; font-weight: bold;">Giới thiệu</a></li>
+                                <li><a href="?act=contact" style="font-size: 17px; font-weight: bold;">Liên hệ</a></li>
                             </ul>
                         </nav>
                     </div>
